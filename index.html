@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TARA Manual Input (Full Divisions)</title>
+  <link rel="stylesheet" href="tara.css" />
+  <style>
+    .division-label {
+      text-align: center;
+      font-weight: bold;
+      color: black;
+      padding: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">TARA Manual Input Interface</h1>
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <button onclick="addRow()">➕ Add Row</button>
+  <button onclick="saveTable()">💾 Save Data</button>
+  <button onclick="exportTable()">⬇️ Export JSON</button>
+  <button onclick="importTable()">⬆️ Import JSON</button>
+  <button onclick="exportToExcel()">📊 Export Excel</button>
+  <button onclick="exportToPDF()">📝 Export PDF</button>
+  <button onclick="importFromExcel()">📥 Import Excel</button>
+
+  <input type="file" id="importFile" accept=".json" style="display: none;" />
+  <input type="file" id="excelImportInput" accept=".xlsx, .xls" style="display: none;" />
+</div>
+
+
+  <div id="table-container">
+    <table id="tara-table">
+      <thead>
+        <tr id="division-labels"></tr>
+        <tr id="header-row"></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <pre id="output" style="background: #eee; padding: 10px; max-width: 90%; margin: 30px auto; display: none;"></pre>
+
+  <!-- External Libraries -->
+   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+
+  <!-- Your JS -->
+  <script src="tara.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+table {
+  border-collapse: collapse;
+  width: 200%; /* Or set to 100% if you want it contained */
+  margin: auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  table-layout: fixed; /* ✅ Force columns to obey width */
+}
+
+th, td {
+  width: 500px;   /* or 200px or whatever you want */
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: left;
+  vertical-align: top;
+}
+/* Table Layout */
+table {
+  border-collapse: collapse;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.division-label{
+    width: 100px;
+}
+/* Column Color Classes */
+th.asset,
+td:nth-child(n):has(input[list^="list-asset"]) {
+    background-color: #d0e6ff;
+    width: 831px;
+}
+th.damage {
+    width: 831px;
+    background-color: #fff3cd;
+}
+th.threat {
+    width: 531px;
+    background-color: #f8d7da;
+}
+th.impact {
+    background-color: #ffe0b2;
+    width: 831px;
+}
+th.attack-path {
+    width: 731px;
+    background-color: #d0f0c0;
+}
+th.attack-rating {
+    width: 831px;
+    background-color: #e0ccff;
+}
+th.risk-decision {
+    width: 731px;
+    background-color: #e6f9ff;
+}
+th.security-control {
+    width: 650px;
+    background-color: #f3e5f5;
+}
+th.residual-risk {
+    width: 1087px;
+    background-color: #f0f4c3;
+}
+
+
+/* Inputs */
+input.cell-input {
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+/* Buttons */
+button {
+    padding: 6px 12px;
+    margin: 3px;
+    font-size: 14px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1976D2;
+}
+
+/* Preformatted output */
+pre#output {
+    font-size: 13px;
+    line-height: 1.4em;
+    white-space: pre-wrap;
+}
+.division-label {
+    font-weight: bold;
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+}
+
+.header-row {
+    width: 200px;
+}
+
